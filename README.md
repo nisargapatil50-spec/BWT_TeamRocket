@@ -39,7 +39,9 @@ User Initiates Payment
 
 The fraud engine is designed as a pre-authorization validation layer within the transaction flow. 
 
-4. Core Architecture Components 
+4. Core Architecture Components
+   ![System Architecture](architecture.png)
+   
 4.1 Input Layer 
 
 Captures: 
