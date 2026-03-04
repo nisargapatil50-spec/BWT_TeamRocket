@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <title>Scan QR Code • UPI Scam Shield</title>
+  <script src="https://cdn.jsdelivr.net/npm/jsqr@1.4.0/dist/jsQR.js"></script>
+  <style>#canvas{display:none}</style>
+</head>
+<body>
+  <div class="container">
+    <div class="card" style="max-width:780px">
+      <h1 class="title">Scan QR Code</h1>
+      <div class="row">
+        <label for="file">Upload QR Image</label>
+        <input id="file" type="file" accept="image/*">
+        <div class="muted">or paste QR content</div>
+        <textarea id="qrText" rows="4" placeholder="upi://pay?pa=support-refund@okaxis&pn=Refund%20Team&am=1"></textarea>
+        <button id="analyzeQrBtn">Analyze QR Code</button>
+        <canvas id="canvas"></canvas>
+      </div>
+    </div>
+  </div>
+  <script src="../js/qr_check.js"></script>
+</body>
+</html>
